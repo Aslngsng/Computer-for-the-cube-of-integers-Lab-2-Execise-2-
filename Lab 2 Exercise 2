@@ -1,3 +1,17 @@
 #ask for the size of array
 #ask for the elements of the array
 #display the cube of each element
+
+#Input the size of the array
+size = int(input("Enter the size of the array: "))
+
+#Input the elements of the array
+elements = input("Enter the elements separated by space: ").split()
+
+#Convert the input elements to integers
+elements = [int(element) for element in elements]
+
+#Display the cube of each element
+print("The cubes of the elements are:")  # Print header
+for element in elements:
+    print(element ** 3)  # Print the cube of each element
